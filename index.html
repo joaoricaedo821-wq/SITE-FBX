@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FBX TV | Onde assistir</title>
+<meta name="theme-color" content="#080d0a">
+<style>
+:root{--bg:#080d0a;--panel:#111a14;--line:#26382c;--green:#25dc70;--muted:#9aada0;--white:#f5faf6}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -25%,#1c4a2d 0,transparent 55%),var(--bg);color:var(--white);font-family:Arial,sans-serif}
+header{position:sticky;top:0;z-index:3;background:#080d0aeb;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:1000;letter-spacing:1.5px}.mark{height:43px;width:43px;border:2px solid var(--green);border-radius:12px;display:grid;place-items:center;color:var(--green);font-size:14px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:2px;margin-top:4px}
+nav button,.btn{border:0;border-radius:9px;padding:11px 14px;font-weight:900;cursor:pointer}.admin-open{background:#1a2b20;color:#c9f6d7;border:1px solid #31513a}
+main{max-width:1150px;margin:38px auto;padding:0 22px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--green);font-weight:900}.hero{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:27px}.hero h1{font-size:clamp(36px,6vw,62px);margin:9px 0;line-height:.98}.hero p{color:var(--muted);line-height:1.6;max-width:570px;margin:0}.counter{border:1px solid var(--line);background:#101a13;padding:13px 16px;border-radius:12px;color:var(--muted);white-space:nowrap}.counter b{font-size:25px;color:var(--green);margin-right:7px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.filters button{background:#111a14;color:#aebdb2;border:1px solid var(--line);padding:9px 13px;border-radius:9px;font-size:11px;font-weight:900;cursor:pointer}.filters button.active{color:var(--green);border-color:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.match{background:linear-gradient(145deg,#17241b,#0e1510);border:1px solid #2b3d30;border-radius:16px;padding:17px}.matchtop{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:10px;letter-spacing:.8px}.status{color:var(--green);font-weight:1000}.teams{display:grid;grid-template-columns:1fr 48px 1fr;gap:6px;align-items:center;text-align:center;padding:24px 0 18px}.teamlogo{width:72px;height:72px;object-fit:contain;display:block;margin:0 auto 8px;filter:drop-shadow(0 5px 9px #0008)}.teamname{font-size:13px;font-weight:900;overflow-wrap:anywhere}.vs{font-size:12px;color:#789080;font-weight:1000}.comp{text-align:center;color:var(--muted);font-size:11px;margin-bottom:14px}.watch{display:block;text-decoration:none;text-align:center;background:var(--green);color:#061009;padding:12px;border-radius:9px;font-size:11px;font-weight:1000}.watch.off{background:#25342a;color:#91a397;pointer-events:none}
+.empty{grid-column:1/-1;text-align:center;padding:50px 20px;border:1px dashed #35483a;border-radius:15px;color:var(--muted)}.empty b{display:block;color:#edf6ef;margin-bottom:8px}
+footer{text-align:center;color:#64766a;font-size:10px;letter-spacing:1px;margin:40px 0 22px}
+.modal{position:fixed;inset:0;background:#000b;z-index:10;display:none;align-items:center;justify-content:center;padding:16px}.modal.show{display:flex}.dialog{width:min(560px,100%);max-height:90vh;overflow:auto;background:#111a14;border:1px solid #34503b;border-radius:17px;padding:22px}.dialog h2{margin:0 0 16px}.field{margin:12px 0}.field label{display:block;color:var(--muted);font-size:11px;font-weight:900;margin-bottom:7px}.field input,.field select{width:100%;padding:12px;background:#080e0a;border:1px solid #2b3d30;border-radius:9px;color:white;outline:none}.field input:focus,.field select:focus{border-color:var(--green)}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.primary{background:var(--green);color:#061009;width:100%;margin-top:8px}.secondary{background:#203126;color:#d9f4df;border:1px solid #38543e}.danger{background:#402323;color:#ffdede;border:1px solid #663535}.close{float:right;background:transparent;color:#dce9df;font-size:20px;padding:0 5px}.admin-list{margin-top:18px;border-top:1px solid var(--line);padding-top:12px}.admin-item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #25342a;font-size:12px}.admin-item span{min-width:0;overflow-wrap:anywhere}.admin-item button{margin-left:5px;padding:7px 9px;font-size:10px}.note{font-size:11px;color:var(--muted);line-height:1.5}.hidden{display:none!important}
+@media(max-width:700px){.hero{display:block}.counter{display:inline-block;margin-top:15px}.cards{grid-template-columns:1fr}}@media(max-width:430px){main{margin-top:26px}.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav><div class="brand"><div class="mark">FBX</div><div>FBX TV<small>FEDERAÇÃO BRASILEIRA RFX</small></div></div><button class="admin-open" id="adminOpen">ÁREA DO ADMIN</button></nav></header>
+<main>
+<section class="hero"><div><div class="eyebrow">FUTEBOL • AO VIVO • FBX RFX</div><h1>ONDE ASSISTIR</h1><p>Confira a programação e acompanhe as transmissões oficiais da FBX RFX em um só lugar.</p></div><div class="counter"><b id="total">0</b> PARTIDAS</div></section>
+<div class="filters"><button class="active" data-filter="TODOS">TODOS</button><button data-filter="AO VIVO">AO VIVO</button><button data-filter="EM BREVE">EM BREVE</button><button data-filter="ENCERRADO">ENCERRADOS</button></div>
+<section class="cards" id="cards"><div class="empty"><b>CARREGANDO JOGOS...</b>Um momento.</div></section>
+<footer>FBX TV • SUA CASA DO FUTEBOL RFX</footer>
+</main>
+
+<div class="modal" id="loginModal"><div class="dialog"><button class="close" data-close="loginModal">×</button><h2>ACESSO DO ADMIN</h2><form id="loginForm"><div class="field"><label>E-MAIL DO ADMINISTRADOR</label><input id="email" type="email" required autocomplete="username"></div><div class="field"><label>SENHA</label><input id="password" type="password" required autocomplete="current-password"></div><button class="btn primary">ENTRAR</button></form><p class="note" id="loginMsg">Apenas a conta de administrador autorizada pode publicar e editar partidas.</p></div></div>
+
+<div class="modal" id="adminModal"><div class="dialog"><button class="close" data-close="adminModal">×</button><h2>PAINEL FBX TV</h2>
+<form id="gameForm">
+<input type="hidden" id="gameId">
+<div class="row"><div class="field"><label>TIME DA CASA</label><input id="home" required placeholder="Ex.: Vasco RFX"></div><div class="field"><label>TIME VISITANTE</label><input id="away" required placeholder="Ex.: Flamengo RFX"></div></div>
+<div class="row"><div class="field"><label>DATA</label><input id="date" type="date"></div><div class="field"><label>HORÁRIO</label><input id="time" type="time"></div></div>
+<div class="field"><label>CAMPEONATO / RODADA</label><input id="competition" placeholder="FBX RFX — Rodada 1"></div>
+<div class="field"><label>LINK DA TRANSMISSÃO</label><input id="url" type="url" required placeholder="https://youtube.com/..."></div>
+<div class="field"><label>STATUS</label><select id="status"><option>EM BREVE</option><option>AO VIVO</option><option>ENCERRADO</option></select></div>
+<button class="btn primary" id="saveGame">PUBLICAR PARTIDA</button>
+<button class="btn secondary hidden" type="button" id="cancelEdit">CANCELAR EDIÇÃO</button>
+</form>
+<div class="admin-list"><div style="display:flex;justify-content:space-between;align-items:center"><b>PARTIDAS CADASTRADAS</b><button class="btn secondary" id="logout">SAIR</button></div><div id="adminGames"></div></div>
+<p class="note">Os escudos são procurados automaticamente pelo nome do clube. Se a busca não localizar o escudo correto, você poderá informar uma URL de imagem na edição.</p>
+</div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* CONFIGURAÇÃO: preencha com os dados do seu projeto Supabase. */
+const SUPABASE_URL = "https://ixbzocbcjnlnkcviwvjp.supabase.co/rest/v1/
+";
+const SUPABASE_ANON_KEY = "sb_publishable_p7yKv6zfopInBt_7aWfVBg_4aDtfe3e";
+const configured = SUPABASE_URL.startsWith("https://") && !SUPABASE_ANON_KEY.startsWith("COLE_");
+const db = configured ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
+let games=[], filter="TODOS", currentUser=null;
+const $=id=>document.getElementById(id);
+const fallback=n=>"https://ui-avatars.com/api/?name="+encodeURIComponent(n)+"&background=14251a&color=35e879&bold=true&size=128";
+function safe(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function dateBR(d){if(!d)return"DATA A DEFINIR";const [y,m,day]=d.split("-");return `${day}/${m}/${y}`;}
+async function findBadge(team){
+  const q=encodeURIComponent(team+" football club logo");
+  try{const r=await fetch("https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch="+q+"&gsrnamespace=6&gsrlimit=10&prop=imageinfo&iiprop=url&iiurlwidth=200&format=json&origin=*");const j=await r.json();const p=Object.values(j.query?.pages||{});const hit=p.find(x=>/logo|crest|badge|escudo|emblem/i.test(x.title))||p[0];if(hit?.imageinfo?.[0]?.thumburl)return hit.imageinfo[0].thumburl;}catch(e){}
+  try{const r=await fetch("https://pt.wikipedia.org/api/rest_v1/page/summary/"+encodeURIComponent(team));const j=await r.json();if(j.thumbnail?.source)return j.thumbnail.source;}catch(e){}
+  return fallback(team);
+}
+function render(){
+ $("total").textContent=games.length;
+ const items=games.filter(g=>filter==="TODOS"||g.status===filter);
+ $("cards").innerHTML=items.length?items.map(g=>`<article class="match"><div class="matchtop"><span>${safe(dateBR(g.match_date))} • ${safe(g.match_time||"HORÁRIO A DEFINIR")}</span><span class="status">${safe(g.status)}</span></div><div class="teams"><div><img class="teamlogo" src="${safe(g.home_logo||fallback(g.home_team))}" onerror="this.src='${fallback(g.home_team)}'"><div class="teamname">${safe(g.home_team)}</div></div><div class="vs">VS</div><div><img class="teamlogo" src="${safe(g.away_logo||fallback(g.away_team))}" onerror="this.src='${fallback(g.away_team)}'"><div class="teamname">${safe(g.away_team)}</div></div></div><div class="comp">${safe(g.competition||"FBX RFX")}</div><a class="watch ${g.status==="ENCERRADO"?"off":""}" href="${safe(g.stream_url)}" target="_blank" rel="noopener">${g.status==="AO VIVO"?"▶ ASSISTIR AO VIVO":g.status==="ENCERRADO"?"TRANSMISSÃO ENCERRADA":"▶ ACESSAR TRANSMISSÃO"}</a></article>`).join(""):'<div class="empty"><b>NENHUMA PARTIDA POR AQUI</b>As próximas transmissões aparecerão nesta página.</div>';
+}
+async function loadGames(){
+ if(!db){$("cards").innerHTML='<div class="empty"><b>CONFIGURAÇÃO PENDENTE</b>O site precisa ser conectado ao banco de dados Supabase antes de publicar.</div>';return;}
+ const {data,error}=await db.from("matches").select("*").order("match_date",{ascending:true}).order("match_time",{ascending:true});
+ if(error){$("cards").innerHTML='<div class="empty"><b>NÃO FOI POSSÍVEL CARREGAR OS JOGOS</b>Confira a configuração do banco de dados.</div>';return;}
+ games=data||[];render();if(currentUser)renderAdmin();
+}
+function open(id){$(id).classList.add("show")}function close(id){$(id).classList.remove("show")}
+$("adminOpen").onclick=()=>currentUser?open("adminModal"):open("loginModal");
+document.querySelectorAll("[data-close]").forEach(b=>b.onclick=()=>close(b.dataset.close));
+document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{filter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(x=>x.classList.toggle("active",x===b));render();});
+$("loginForm").onsubmit=async e=>{e.preventDefault();if(!db){$("loginMsg").textContent="O Supabase ainda não foi configurado.";return;}const {data,error}=await db.auth.signInWithPassword({email:$("email").value,password:$("password").value});if(error){$("loginMsg").textContent="Não foi possível entrar. Confira e-mail e senha.";return;}currentUser=data.user;close("loginModal");open("adminModal");renderAdmin();};
+$("logout").onclick=async()=>{await db.auth.signOut();currentUser=null;close("adminModal");};
+function resetForm(){$("gameForm").reset();$("gameId").value="";$("saveGame").textContent="PUBLICAR PARTIDA";$("cancelEdit").classList.add("hidden");}
+$("cancelEdit").onclick=resetForm;
+async function renderAdmin(){
+ if(!currentUser)return;
+ $("adminGames").innerHTML=games.map(g=>`<div class="admin-item"><span><b>${safe(g.home_team)} x ${safe(g.away_team)}</b><br>${safe(g.status)}</span><span><button class="btn secondary" onclick="editMatch('${g.id}')">EDITAR</button><button class="btn danger" onclick="deleteMatch('${g.id}')">EXCLUIR</button></span></div>`).join("")||'<p class="note">Nenhuma partida cadastrada.</p>';
+}
+$("gameForm").onsubmit=async e=>{
+ e.preventDefault();if(!currentUser||!db)return;
+ const home=$("home").value.trim(),away=$("away").value.trim(),id=$("gameId").value;
+ const payload={home_team:home,away_team:away,match_date:$("date").value||null,match_time:$("time").value||null,competition:$("competition").value,stream_url:$("url").value,status:$("status").value};
+ const button=$("saveGame");button.disabled=true;button.textContent="SALVANDO...";
+ try{
+  if(id){const {error}=await db.from("matches").update(payload).eq("id",id);if(error)throw error;}
+  else{
+   payload.home_logo=await findBadge(home);payload.away_logo=await findBadge(away);
+   const {error}=await db.from("matches").insert(payload);if(error)throw error;
+  }
+  resetForm();await loadGames();
+ }catch(err){alert("Erro ao salvar. Confira as permissões do Supabase e os campos.");}
+ button.disabled=false;if(!id)button.textContent="PUBLICAR PARTIDA";
+};
+window.editMatch=id=>{const g=games.find(x=>x.id===id);if(!g)return;$("gameId").value=g.id;$("home").value=g.home_team;$("away").value=g.away_team;$("date").value=g.match_date||"";$("time").value=g.match_time||"";$("competition").value=g.competition||"";$("url").value=g.stream_url;$("status").value=g.status;$("saveGame").textContent="SALVAR ALTERAÇÕES";$("cancelEdit").classList.remove("hidden");};
+window.deleteMatch=async id=>{if(!confirm("Excluir esta partida?"))return;const {error}=await db.from("matches").delete().eq("id",id);if(error){alert("Não foi possível excluir a partida.");return;}await loadGames();};
+async function init(){
+ if(!db){$("cards").innerHTML='<div class="empty"><b>FBX TV ESTÁ QUASE PRONTA</b>Conecte o projeto Supabase seguindo o arquivo LEIA-ME para ativar os jogos e o painel administrativo.</div>';return;}
+ const {data}=await db.auth.getUser();currentUser=data.user||null;await loadGames();
+ db.auth.onAuthStateChange((_event,session)=>{currentUser=session?.user||null;});
+}
+init();
+</script>
+</body></html>

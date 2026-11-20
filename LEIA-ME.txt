@@ -1,0 +1,44 @@
+# FBX TV — publicar na internet
+
+Este projeto cria uma página pública de transmissões e um painel de administração com login.
+Os visitantes veem os jogos; o administrador entra pelo botão **ÁREA DO ADMIN**.
+
+## O que você precisa
+- Uma conta GitHub
+- Uma conta Supabase (plano gratuito serve para começar)
+- Uma conta Vercel (plano gratuito serve para publicar)
+
+## 1. Criar o banco de dados
+1. Entre em https://supabase.com e crie um projeto.
+2. Abra **SQL Editor** → **New query**.
+3. Copie todo o conteúdo do arquivo `supabase_schema.sql`, cole e clique em **Run**.
+4. Vá em **Authentication** → **Users** → **Add user** e crie o e-mail e a senha que serão usados no painel. Não compartilhe essa senha.
+
+## 2. Conectar o site ao Supabase
+1. No Supabase, abra **Project Settings** → **API** (ou **Data API**).
+2. Copie a **Project URL** e a chave pública **anon / publishable**.
+3. Abra `index.html` e procure:
+   - `COLE_A_URL_DO_SEU_PROJETO`
+   - `COLE_A_CHAVE_ANON_PUBLIC`
+4. Substitua os dois textos pelos valores do seu projeto. A chave pública anon/publishable pode ficar no site; nunca coloque a `service_role` ou chave secreta no HTML.
+
+## 3. Enviar para o GitHub
+1. No GitHub, clique em **New repository** e crie um repositório, por exemplo `fbx-tv`.
+2. Envie `index.html` para a raiz do repositório. O arquivo `supabase_schema.sql` e este README podem ficar junto.
+3. Salve as alterações.
+
+## 4. Publicar com um link
+1. Entre em https://vercel.com e escolha **Add New → Project**.
+2. Conecte o GitHub e importe o repositório `fbx-tv`.
+3. Clique em **Deploy**. A Vercel vai gerar um endereço público `...vercel.app`.
+4. Compartilhe esse endereço: qualquer pessoa poderá ver as partidas.
+
+## Como usar
+- Abra o endereço público.
+- Clique em **ÁREA DO ADMIN** e entre com o e-mail/senha que você criou no Supabase.
+- Cadastre os times, data, horário, competição e link da transmissão.
+- Para iniciar a transmissão, altere o status para **AO VIVO**.
+- Para encerrar, altere para **ENCERRADO**.
+
+## Segurança importante
+O SQL acima permite escrita a qualquer usuário que consiga autenticar no Supabase. Para uso real, mantenha o cadastro público de usuários desativado em **Authentication → Settings → Allow new users to sign up** (ou equivalente) e crie somente o seu usuário pelo painel Supabase. Não compartilhe o login de administrador.
